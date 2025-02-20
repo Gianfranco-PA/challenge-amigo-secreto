@@ -9,7 +9,7 @@ const h3TitleResult = document.getElementById("title-result");
 const amigos = [];
 
 function agregarAmigo() {
-    const amigo = inputAmigo.value;
+    const amigo = inputAmigo.value.trim();
     if (amigo) {
         amigos.push(amigo);
         inputAmigo.value = "";
